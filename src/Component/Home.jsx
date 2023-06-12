@@ -20,15 +20,13 @@ function Home(props) {
                         </button></a>
                         
                         <div className='flex gap-4 mt-4 py-4 lg:hidden'>
-                            <div className='py-2 px-2 w-auto rounded-full text-center bg-gray-500 text-white cursor-pointer' >
+                            <div className='py-2 px-2 w-auto rounded-full text-center bg-gray-700 text-white cursor-pointer' >
                               <a href='https://github.com/ShubhangiJadhav521'>  < FaGithub size={30} className='text-white' /></a>
                             </div>
-                            <div className=' py-2 px-2 w-auto rounded-full text-center bg-blue-500 text-white cursor-pointer'>
-                                <a><FaLinkedin size={30} /></a>
+                            <div className=' py-2 px-2 w-auto rounded-full text-center bg-blue-700 text-white cursor-pointer'>
+                                <a href='https://www.linkedin.com/in/shubhangi-jadhav-b88b3221b/'><FaLinkedin size={30} /></a>
                             </div>
-                            <div className='py-2 px-2 w-auto rounded-full text-center bg-red-700 cursor-pointer'>
-                               <a> <HiOutlineMail size={30} className='text-white' /></a>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
