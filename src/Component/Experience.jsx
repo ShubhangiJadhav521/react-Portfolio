@@ -7,7 +7,6 @@ import reactimg from '../image/React.png';
 import tailwind from '../image/Tailwind.png';
 import sql from '../image/sql2.webp';
 import node from '../image/Node.png';
-import Resume from './Resume';
 import Project1 from '../image/project1.png';
 import project2 from '../image/project2.png';
 
