@@ -3,11 +3,9 @@ import { FaBriefcase, FaBook } from 'react-icons/fa'
 
 function Resume(props) {
     return (
-        <div name="Experience" className=' w-full bg-gradient-to-t from bg-gray-800 to-black text-white h-auto'>
+        <div name="Experience" className=' w-full bg-gradient-to-b via-black
+        from-black to-gray-800 text-white h-auto'>
             <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
-                {/* <div className='ml-4'>
-                    <p className='text-4xl font-bold border-b-4 border-gray-500 p-2 inline '>RESUME</p>
-                </div> */}
                 <div className='w-full  py-8 px-12 sm:px-0 mt-9'>
                     <div >
 
@@ -15,7 +13,7 @@ function Resume(props) {
                         <div className=' ml-4 border-l-2 border-gray-500 mt-4 w-full h-full'>
 
                             <div className='ml-4 '>
-                                <p>Jan-2023-Present</p>
+                                <p>Jan-2023-Jun-2023</p>
                                 <p className='text-2xl text-blue-500 my-3'>Software Engineer Intern</p>
                                 <p className='text-xl'>CSP INDIA NETWORK PTV.LTD</p>
                                 <p>Responsibility</p>
@@ -43,7 +41,7 @@ function Resume(props) {
                                 <p>2021-2023</p>
                                 <p className='text-2xl text-blue-500 my-3'>Master of Computer Application (MCA)</p>
                                 <p className='text-xl'>Kavayitri Bahinabai Chaudhari North Maharashtra University, Jalgaon, Maharashtra.</p>
-                                <p>CGPA- 9.21</p>
+                                <p>CGPA- 8.75</p>
                             </div>
 
                         </div>
