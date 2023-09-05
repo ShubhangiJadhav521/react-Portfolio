@@ -9,9 +9,10 @@ import mongodb from "../image/mongodb.png";
 import node from "../image/Node.png";
 import Project1 from "../image/Bookstore.jpeg";
 import project2 from "../image/weather.jpeg";
-import Portfolioimg from '../image/portfolio.jpeg'
+import Portfolioimg from "../image/portfolio.jpeg";
 import { FaGithub } from "react-icons/fa";
-
+import { HiChevronDown, HiChevronUp } from "react-icons/hi";
+import Express from "../image/express3.png"
 
 function Experience(props) {
   const techs = [
@@ -33,29 +34,35 @@ function Experience(props) {
       title: "JavaScript",
       style: "shadow-yellow-500",
     },
+    // {
+    //   id: "4",
+    //   src: bootstrap,
+    //   title: "BootStrap",
+    //   style: "shadow-indigo-500",
+    // },
     {
       id: "4",
-      src: bootstrap,
-      title: "BootStrap",
-      style: "shadow-indigo-500",
-    },
-    {
-      id: "5",
       src: tailwind,
       title: "Tailwind",
       style: "shadow-blue-800",
     },
     {
-      id: "6",
+      id: "5",
       src: reactimg,
       title: "React JS",
       style: "shadow-blue-600",
     },
     {
-      id: "7",
+      id: "6",
       src: node,
       title: "Node",
       style: "shadow-green-500",
+    },
+    {
+      id:"7",
+      src:Express,
+      title: "Express",
+      style: "shadow-gray-500"
     },
     {
       id: "8",
@@ -92,7 +99,7 @@ function Experience(props) {
   ];
   return (
     <div
-      name="experience"
+      id="experience"
       className="bg-gradient-to-b from-gray-800 to-black w-full h-auto min-h-fit  pb-10"
     >
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white ">
@@ -101,11 +108,11 @@ function Experience(props) {
             MY SKILLS
           </p>
         </div>
-        <div className="w-full grid grid-cols-2 sm:grid-cols-4  gap-8 text-center py-8 px-12 ">
+        <div className="w-full grid grid-cols-2 sm:grid-cols-4  gap-8 text-center py-8 px-12 object-cover ">
           {techs.map(({ id, src, title, style }) => (
             <div
               key={id}
-              className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
+              className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style} `}
             >
               <img
                 src={src}
@@ -116,6 +123,7 @@ function Experience(props) {
             </div>
           ))}
         </div>
+        <div className="w-full"></div>
         <div className=" p-8 mt-20">
           <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
             Projects
@@ -136,7 +144,7 @@ function Experience(props) {
                 <h1 className="font-bold hover:scale-105 text-lg">
                   Book Store Application
                 </h1>
-                <p class="text-white lg:text-md text-sm lg:font-semibold  justify-normal  justify-items-center py-1 px-1">
+                <p className="text-white lg:text-md text-sm lg:font-semibold  justify-normal  justify-items-center py-1 px-1">
                   I developed a Google Book Search app using React JS, Css and
                   integrated the Google Books API to fetch book data. The app
                   allows users to search for any book by entering keywords, and
@@ -161,11 +169,11 @@ function Experience(props) {
                 alt="skill"
                 className=" w-auto  m-4 sm:w-full  "
               />
-              <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-90 bg-blue-900  flex-col">
+              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-90 bg-blue-900  flex-col">
                 <h1 className="lg:font-bold font-semibold hover:scale-105 text-lg ">
                   Weather Application
                 </h1>
-                <p class="text-white lg:text-md text-sm lg:font-semibold  justify-items-center py-1 px-1">
+                <p className="text-white lg:text-md text-sm lg:font-semibold  justify-items-center py-1 px-1">
                   The Weather App is a web application built using React.js,
                   CSS, and fetching data from the OpenWeatherMap API. Its main
                   purpose is to provide real-time weather information for
@@ -190,14 +198,12 @@ function Experience(props) {
                 alt="skill"
                 className=" w-auto  m-4 sm:w-full  "
               />
-              <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-90 bg-gray-700  flex-col">
-                <h1 className="font-bold hover:scale-105 text-lg">
-                  Portfolio
-                </h1>
-                <p class="text-white text-md lg:font-semibold  justify-normal  justify-items-center py-1">
-                 This is my personal portfolio website that was built using React JS, Tailwind CSS. 
-                 It features an attractive and modern design.
-                    
+              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-90 bg-gray-700  flex-col">
+                <h1 className="font-bold hover:scale-105 text-lg">Portfolio</h1>
+                <p className="text-white text-md lg:font-semibold  justify-normal  justify-items-center py-1">
+                  This is my personal portfolio website that was built using
+                  React JS, Tailwind CSS. It features an attractive and modern
+                  design.
                 </p>
 
                 <a

@@ -4,59 +4,52 @@ import { HiOutlineMail, HiHand } from "react-icons/hi";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import hello from "../image/waving-hand-people.gif";
+import Img from "../image/girlimg.jpg";
+import Mernimg from "../image/MERN-Stack.png";
 
 function Home(props) {
   const [text] = useTypewriter({
-    words: ["Frontend Developer", "FullStack Developer", "MernStack Developer"],
+    words: ["FullStack Developer", "MernStack Developer"],
     loop: {},
     cursorStyle: "_",
     typeSpeed: 70,
     deleteSpeed: 50,
-    delaySpeed: 1000,
+    delaySpeed: 5000,
   });
   return (
     <div
-      name="home"
+      id="home"
       className="h-screen w-full bg-gradient-to-b via-black
-        from-black to-gray-800 "
+        from-black to-gray-900 "
     >
       <div
-        className="max-w-screen-lg mx-auto flex flex-col
-            item-center justify-center h-full px-4 md:flex-row "
+        className="max-w-screen-lg mx-auto 
+            item-center justify-center h-full px-8 lg:px-0  grid sm:grid-cols-2  grid-col-1 sm:flex-row-reverse flex-row place-content-center  gap-10"
       >
-        <div className="flex flex-col justify-center h-full lg:w-4/6 md:w-4/6 w-full">
-          <div>
-            <h2 className="text-[25px] leading-7 lg:text-5xl font-bold text-white ">
-              I'M a <span className="text-white">{text}</span>
-              
-            </h2>
-          </div>
+        <div className="flex h-full  w-full justify-center  ">
+          <img
+            src={Img}
+            alt="girl"
+            className="sm:w-[25rem] sm:h-[20rem] w-[20rem] h-[14rem] rounded-3xl"
+          />
+        </div>
+        <div className=" h-full  w-full place-content-center text-center md:text-start ">
+          <h2 className="text-[25px] leading-7 lg:text-4xl font-bold text-white  ">
+            I'M {text}
+          </h2>
+          <div >
+
           <p className="py-4 max-w-md text-gray-400 text-xl  ">
             {" "}
-            Hey, I'M <span className="text-blue-500">Shubhangi Jadhav</span> .
-            Front-End Software Developer Building smart user Interface and
+            Hey, I'M <span className="text-green-500 ">Shubhangi Jadhav</span> .
+            Full Stack Software Developer Building smart user Interface and
             useful interaction, developing rich web applications.
           </p>
-
-          <div>
-            <button className="text-white w-fit bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-2 hover:px-8 my-2 flex items-center rounded-md cursor-pointer">
-              say hello
-              <img src={hello} alt="hi" className="w-10 h-10" />
+          <div className="flex justify-center md:justify-start">
+            <button className=" text-slate-200 w-fit bg-gradient-to-r from-green-400 to-green-900 px-8 py-2  my-4 rounded-full  text-lg">
+              Hire Me
             </button>
-
-            <div className="flex gap-4 mt-4 py-4 lg:hidden">
-              <div className="py-2 px-2 w-auto rounded-full text-center bg-gray-700 text-white cursor-pointer">
-                <a href="https://github.com/ShubhangiJadhav521">
-                  {" "}
-                  <FaGithub size={30} className="text-white" />
-                </a>
-              </div>
-              <div className=" py-2 px-2 w-auto rounded-full text-center bg-blue-700 text-white cursor-pointer">
-                <a href="https://www.linkedin.com/in/shubhangi-jadhav-b88b3221b/">
-                  <FaLinkedin size={30} />
-                </a>
-              </div>
-            </div>
+          </div>
           </div>
         </div>
       </div>

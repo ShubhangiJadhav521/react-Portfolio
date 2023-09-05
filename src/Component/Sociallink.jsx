@@ -34,13 +34,13 @@ function Sociallink(props) {
             child:(
                 <> Resume <BsFillPersonLinesFill size={30}/></>
             ),
-            href:'shubhangiResume.pdf',
+            href:'shubhangi_Jadhav_Resume.pdf',
             style:'rounded-tr-md',
             download:true,
         },
     ]
     return (
-        <div className='hidden lg:flex flex-col top-[35%] left-0 fixed'>
+        <div className='hidden lg:flex flex-col top-[35%] left-0 fixed z-[1]'>
             <ul >
                 {Links.map(({id,child, href, style, download})=>(
                      <li key={id} className={"flex justify-between items-center w-40 h-14  px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 bg-gray-500 "+""+ style}>
