@@ -17,23 +17,43 @@ function Resume(props) {
               Working Experience
             </p>
             <div className=" ml-4 border-l-2 border-gray-500 mt-4 w-full h-full">
-              <div className="ml-4 ">
-                <p>Jun-2022- Present</p>
+              {/* <div className="ml-4 ">
+                <p>Octobar-2023 to Present</p>
                 <p className="text-2xl text-blue-500 my-3">
-                  Full Stack Developer
+                  Software Developer
                 </p>
-                <p className="text-xl">Aximtech IT Solution PVT. LTD.</p>
+                <p className="text-xl">Omicron Technology</p>
                 <p>Responsibility</p>
                 <ul className="text-gray-400">
                   <li>
                     {" "}
                     Developed web applications using a variety of technologies
-                    including JavaScript, React, Node.js, Express JS and
-                    MongoDB.
+                    including JavaScript, React.
                   </li>
                   <li>
-                    Designing and developing scalable and efficient APIs and
-                    backend systems.
+                    Participated in code reviews, unit testing, and integration
+                    testing to ensure code quality and application performance.
+                  </li>
+                  <li>
+                    Stayed up-to-date with software development trends and
+                    technologies.
+                  </li>
+                </ul>
+              </div> */}
+            </div>
+            <div className=" ml-4 border-l-2 border-gray-500 mt-4 w-full h-full">
+              <div className="ml-4 ">
+                <p>Jan-2023 to Jun-2023</p>
+                <p className="text-2xl text-blue-500 my-3">
+                  Software Engineer Intern
+                </p>
+                <p className="text-xl">CSP Indian Network Pvt.Ltd</p>
+                <p>Responsibility</p>
+                <ul className="text-gray-400">
+                  <li>
+                    {" "}
+                    Developed web applications using a variety of technologies
+                    including JavaScript, React.
                   </li>
                   <li>
                     Participated in code reviews, unit testing, and integration
